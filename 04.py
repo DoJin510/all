@@ -16,9 +16,9 @@ from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 
 EXECUTOR = ThreadPoolExecutor(max_workers=64)
-# ───────── 매도 기준 전역 상수 (0.3 % TP / 0.3 % SL) ─────────
-TP_RATIO = 1.008      # 1 + 0.003  =  +0.3 %
-SL_RATIO = 0.992      # 1 – 0.003  =  –0.3 %
+# ───────── 매도 기준 전역 상수) ─────────
+TP_RATIO = 1.008  
+SL_RATIO = 0.992   
 # ──────────────────────────────────────────────────────────────
 # ───────── strategy_11 전역 상태 ─────────
 strategy_11_conditions = {}       # 조건 딕셔너리
